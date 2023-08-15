@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2"
+    tools:context=".activities.SettingsActivity">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_life_story_lines"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/life_story_lines_switch"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_family_tree_lines"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/family_tree_lines_switch"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_spouse_lines"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/spouse_lines_switch"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_paternal_side"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/paternal_events_switch"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_maternal_side"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/maternal_events_switch"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_males"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/male_events_switch"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_females"
+            android:textSize="18sp"
+            android:paddingStart="10dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/female_events_switch"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"/>
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/logout_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout" />
+    </LinearLayout>
+
+
+
+</TableLayout>

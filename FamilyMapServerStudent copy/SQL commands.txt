@@ -1,0 +1,41 @@
+create table User
+(
+    Username varchar(255) not null unique,
+    Password varchar(255) not null,
+    Email varchar(255) not null,
+    FirstName varchar(255) not null,
+    LastName varchar(255) not null,
+    Gender varchar(1) not null,
+    PersonID varchar(32) not null unique
+);
+
+create table Person
+(
+    PersonID varchar(32) not null unique,
+    AssociatedUsername varchar(255) not null,
+    FirstName varchar(255) not null,
+    LastName varchar(255) not null,
+    Gender varchar(1) not null,
+    FatherID varchar(32),
+    MotherID varchar(32),
+    SpouseID varchar(32)
+);
+
+create table Event
+(
+    EventID varchar(32) not null unique,
+    AssociatedUsername varchar(255) not null,
+    PersonID varchar(32) not null,
+    Latitude float not null,
+    Longitude float not null,
+    Country varchar(255) not null,
+    City varchar(255) not null,
+    EventType varchar(255) not null,
+    Year integer not null
+);
+
+create table Authtoken
+(
+    Authtoken varchar(32) not null unique,
+    Username varchar(255) not null
+);

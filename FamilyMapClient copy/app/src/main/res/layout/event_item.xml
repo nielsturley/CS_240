@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/marker_icon_event_item"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:maxHeight="60dp"
+        android:minHeight="60dp"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        tools:src="@android:drawable/ic_menu_help" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:id="@+id/event_info_textview_event_item"
+        android:layout_toEndOf="@+id/marker_icon_event_item"
+        tools:text="Event info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:id="@+id/name_associated_textview_event_item"
+        android:layout_toEndOf="@+id/marker_icon_event_item"
+        android:layout_alignBottom="@+id/marker_icon_event_item"
+        tools:text="Name" />
+
+</RelativeLayout>
